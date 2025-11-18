@@ -1,0 +1,38 @@
+{
+  "name": "memory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage":"hhtps://juwon1677.github.io/memory-game",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --open --mode development",
+    "lint": "eslint src/*.js",
+    "test": "jest --coverage",
+    "predeploy": "npm run build",
+    "deploty": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.10.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "5.69.1",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.7.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1"
+  }
+}
